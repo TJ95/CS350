@@ -1,0 +1,15 @@
+#!/bin/bash
+
+rm A1lockout
+
+i=1
+j="failed"
+y=0
+
+while [ $i -le $1 ]; do
+        sys161 kernel-ASST1 "sy3;q" > A1lockout
+        diff A1lockout testout >> diff.txt
+        i=$((i+1))
+done
+
+

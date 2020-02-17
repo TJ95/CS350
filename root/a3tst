@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+printf "\n" > a3result.txt
+
+COUNTER=1
+TOTAL=0
+THRESHOLD=30
+#while [  $COUNTER -le $THRESHOLD ]; do
+sys161 kernel
+q
+p uw-testbin/vm-data1
+#done
+
+
